@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: ffffff;
+  background-image: url("img/bg.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+ h2,
+ .slogan {
+   font-size: 30px;
+   line-height: 36px;
+   font-weight: bold;
+    }
+
+h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  }
+
+.main-header img {
+
+}
+
+.site-navigation a{
+  font-size: 14px;
+  line-height: 1.86;
+  font-weight: bold;
+  color: #000000;
+  list-style: none;
+  }
+
+    .catalog-list,
+    .hotel-rate-star {
+  list-style: none;
+  }
+
+.site-navigation a:hover {
+color: #81b3d2;
+}
+
+.site-navigation a:active {
+color: rgba(0, 0, 0, 0.3);
+}
+
+.features-list,
+.feature-list-extra {
+  list-style: none;
+}
+
+.search-info {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  }
+
+.catalog-item-option a{
+  color: #ffffff;
+  border: none;
+  font: inherit;
+  text-align: center;
+}
+
+.catalog-item-image {
+color: #000000;
+}
+
+.search-item input {
+  background-color: #f2f2f2;
+  }
+.hotel-rate-score {
+  width: 110px;
+  background-color: #f2f2f2;
+}
+
+.search-item input:hover {
+  background-color: #ebebeb;
+}
+
+.search-item input:focus {
+  background-color: #ffffff;
+}
+
+.search-form-title,
+.option-reserve {
+  background-color: #766357;
+  border: none;
+}
+
+  .search-form-title,
+  .option-reserve:hover {
+    background-color: #604e43;
+  }
+
+  .search-form-title,
+  .option-reserve:active {
+    background-color: #503e33;
+  }
+
+.search-item-find,
+.option-details {
+  background-color: #81b3d2;
+  border: none;
+}
+
+.search-item-find,
+.option-details:hover {
+  background-color: #669ec0;
+}
+
+.search-item-find,
+.option-details:active {
+  background-color: #5496bd;
+}
+
+.search-item-plus,
+.search-item-minus {
+  color: rgba(0, 1, 1, 0.15)
+}
+
+.search-item-plus,
+.search-item-minus:hover {
+  color: #000000
+}
+
+.search-item-plus,
+.search-item-minus:active {
+  color: #81b3d2;
+}
+
+.catalog-item-name:hover {
+color: #81b3d2;
+  }
+
+.catalog-item-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+  .main-footer {
+  color: #000000;
+  background-color: #ffffff;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.footer-copyright {
+  text-align: center;
+  background-color: #ffffff;
+}

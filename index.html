@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>SEDONA</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 <header class="main-header">
@@ -69,6 +72,45 @@
 </li>
                </ul>
             </section>
+            <section class="search">
+              <h2 class="search-title" >Заинтересовались?</h2>
+              <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+              </p>
+              <form class="search-form" action="index.html" method="post">
+                <h3 class="search-form">
+<button class="search-form-title" type="button" name="search">Поиск гостиницы в Седоне
+</button>
+                  </h3>
+                <p class="search-item">
+    <label for="arrival-date">Дата заезда</label>
+    <input id="arrival-date" type="text" name="date" value="24 апреля 2017">
+    <button type="button" name="Календарь">
+      <img src="img/calendar.svg" alt="Календарь">
+    </button>
+                </p>
+                <p class="search-item">
+                  <label for="departure-date"> Дата выезда</label>
+                  <input id="departure-date" type="text" name="date" value="4 июля 2017">
+    <button type="button" name="Календарь">
+      <img src="img/calendar.svg" alt="Календарь">
+    </button>
+                </p>
+                <p class="search-item">
+                  <label for="number-adult">Взрослые</label>
+                  <button class="search-item-minus" name="Минус">-</button>
+                  <input id="number-adult" type="text" value="" placeholder="2">
+                  <button class="search-item-plus" name="Плюс">+</button>
+                              </p>
+                              <p class="search-item">
+                                <label for="number-children">Дети</label>
+                                <button  class="search-item-minus" name="minus">-</button>
+                                <input id="number-children" type="text" value="" placeholder="0">
+                                <button class="search-item-plus" name="plus">+</button>
+                                           </p>
+                                           <button class="search-item-find" type="submit" name="button"> Найти
+                                           </button>
+              </form>
+            </section>
                 </main>
     <footer class="main-footer">
       <p class="hashtag">#visitSEDONA</p>
@@ -84,41 +126,6 @@
 </a>
                 </p>
         </footer>
-        <section class="search">
-          <h2 class="search-title" >Заинтересовались?</h2>
-          <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-          </p>
-          <form class="search-form" action="index.html" method="post">
-            <h3 class="search-form">Поиск гостиницы в Седоне</h3>
-            <p class="search-date">
-<label for="arrival-date">Дата заезда</label>
-<input id="arrival-date" type="text" name="date" value="24 апреля 2017">
-<button type="button" name="Календарь">
-  <img src="img/calendar.svg" alt="Календарь">
-</button>
-            </p>
-            <p class="search-date">
-              <label for="departure-date"> Дата выезда</label>
-              <input id="departure-date" type="text" name="date" value="4 июля 2017">
-<button type="button" name="Календарь">
-  <img src="img/calendar.svg" alt="Календарь">
-</button>
-            </p>
-            <p class="search-item">
-              <label for="number-adult">Взрослые</label>
-              <button  name="Минус">-</button>
-              <input id="number-adult" type="text" value="" placeholder="2">
-              <button name="Плюс">+</button>
-                          </p>
-                          <p class="search-item">
-                            <label for="number-children">Дети</label>
-                            <button  name="Минус">-</button>
-                            <input id="number-children" type="text" value="" placeholder="0">
-                            <button name="Плюс">+</button>
-                                       </p>
-                                       <button type="submit" name="button"> Найти
-                                       </button>
-          </form>
-        </section>
+
   </body>
 </html>
