@@ -16,9 +16,20 @@ a {
 }
 
 .promo {
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/polygon.svg"), url("../img/bg.jpg");
+  display: block;
+  margin: 0 auto;
+  height: 773px;
+  width: 1220px;
+  background-position: center bottom;
   background-repeat: no-repeat;
-  }
+    }
+
+  .logo-welcome {
+    display: block;
+    margin: auto;
+    
+            }
 
   .site-navigation a {
     font-size: 14px;
