@@ -1,4 +1,5 @@
 body {
+  width: 1200 px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -15,35 +16,193 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .promo {
   background-image: url("../img/polygon.svg"), url("../img/bg.jpg");
   display: block;
   margin: 0 auto;
-  height: 773px;
-  width: 1220px;
-  background-position: center bottom;
+  height: 508px;
+  width: 1200px;
+  background-position: center bottom, center top;
   background-repeat: no-repeat;
     }
 
   .logo-welcome {
-    display: block;
-    margin: auto;
-    
-            }
+      position: absolute;
+      top: 132px;
+      left: 50%;
+      margin-left: -230px;
+      background-repeat: no-repeat;
+      }
 
-  .site-navigation a {
-    font-size: 14px;
-    line-height: 1.86;
-    font-weight: bold;
-    color: #000000;
-    list-style: none;
+.pref {
+  width: 1200px;
+  height: 216px;
+  background-color: #ffffff
+}
+
+.main-navigation,
+.site-navigation    {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header-logo {
+width: 1200px;
+margin: 0 auto;
+position: absolute;
+left: 50%;
+margin-left: -70px;
+}
+
+.site-navigation  {
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+align-items: center;
+width: 1200px;
+height: 56px;
+/* временно для сетки*/
+background: rgba(234, 255, 45, 0.4);
+box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+.site-navigation a {
+  display: block;
+  padding: 25px 75px;
+vertical-align: middle;
+
+  font-weight: bold;
+  color: #000000;
+      }
+
+      .site-navigation a:hover {
+    color: #81b3d2;
     }
+
+    .site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+    }
+
+button {
+        font: inherit;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+        border: none;
+        font-weight: bold;
+      }
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.index-row-1 {
+  height: 256px;
+  width: 1200px;
+  display: flex;
+  order: 0;
+
+}
+
+.feature-list-extra {
+  height: 330px;
+  width: 1200px;
+  display: flex;
+  order: -1;
+}
+
+.index-row-3 {
+  height: 256px;
+  width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+  order: 0;
+
+}
+
+.index-row-4 {
+  height: 256px;
+  width: 1200px;
+  display: flex;
+  order: 0;
+}
+
+.feature-item-1,
+.feature-item-2 {
+  display: block;
+  height: 256px;
+  width: 400px;
+  background-color: #81b3d2;
+}
+
+.picture-item-1,
+.picture-item-2 {
+  display: block;
+  background-repeat: no-repeat;
+  width: 800px;
+  }
+
+.feature-item-3,
+.feature-item-4,
+.feature-item-5 {
+  display: block;
+  height: 256px;
+  width: 400px;
+  background-color: #eeeeee
+}
+
+.extra-item {
+  display: block;
+  height: 330px;
+  width: 400px;
+  background-color: #ffffff
+}
+
+.pref-form {
+  display: block;
+  height: 294px;
+  width: 1200px;
+      }
+
+/*.search-form {
+        width: 568px;
+        height: 481px;
+        display: block;
+        position: absolute;
+        top: 205px;
+        left: 50%;
+          }*/
 
 .search h2  {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
   text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
  .features-list h3,
@@ -56,6 +215,10 @@ a {
    text-align: center;
     }
 
+.pref p {
+  text-align: center;
+}
+
     .search-info,
     .features p,
     .feature-list-extra p {
@@ -64,14 +227,6 @@ a {
       font-weight: normal;
       text-align: center;
       }
-
-  .site-navigation a:hover {
-color: #81b3d2;
-}
-
-.site-navigation a:active {
-color: rgba(0, 0, 0, 0.3);
-}
 
 .features-list,
 .feature-list-extra {
@@ -83,13 +238,8 @@ color: rgba(0, 0, 0, 0.3);
 list-style: none;
 }
 
-button {
-  font: inherit;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  border: none;
-  font-weight: bold;
+.catalog-item {
+  display: block;
 }
 
 .catalog-item-option a{
@@ -190,6 +340,17 @@ color: #81b3d2;
   background-color: #ffffff;
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.main-footer  .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  /* временно для сетки*/
+  background: rgba(234, 255, 45, 0.4);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .footer-social {
