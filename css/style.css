@@ -124,6 +124,7 @@ button {
   color: #ffffff;
   font: inherit;
   text-align: center;
+  font: inherit;
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
@@ -145,6 +146,23 @@ button {
   font-size: 21px;
   line-height: 1.24;
   font-weight: bold;
+  text-align: center;
+
+}
+
+.pref-form p {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+}
+
+.map {
+  margin-top: 0;
+  height: 473px;
+  background-image: url("../img/map.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .features-list {
@@ -435,7 +453,29 @@ button {
   fill: #81b3d2;
 }
 
-.search-item input:hover {
+  .search-item span.calendar-button {
+   position: absolute;
+   right: 9px;
+   top: 9px;
+background-color: #f2f2f2;
+opacity: 1;
+cursor: pointer;
+ }
+
+ .search-item span.calendar-button path {
+   fill: #cacaca;
+   cursor: pointer;
+ }
+
+ .search-item span.calendar-button:hover path {
+   fill: #000000;
+   }
+
+  .search-item span.calendar-button:active path {
+     fill: #81b3d2;
+     }
+
+  .search-item input:hover {
   background-color: #ebebeb;
 }
 
